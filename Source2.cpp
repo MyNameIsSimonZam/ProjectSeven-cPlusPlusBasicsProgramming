@@ -139,7 +139,30 @@ void pW2() {
 • Программа не завершает работу если робот упёрся в стенку.
 */
 
-void pW3() {}
+void pW3() {
+	int x = 7;
+	int y = 10;
+	std::string derection;
+	std::cout << "Instruction:\n север(клавиша W), юг(клавиша S), запад(клавиша A) или восток(клавиша D)\n\n";
+	while (true) {
+		std::cout << "[Programme]: Mars rover is " << x << ", " << y << ", enter the command\n";
+		std::cout << "[User]: ";
+		std::cin >> derection;
+		if (derection == "A" || derection == "a") {
+			if (x > 0) x--;
+		}
+		else if (derection == "D" || derection == "d") {
+			if (x < 15) x++;
+		}
+		else if (derection == "W" || derection == "w") {
+			if (y < 20) y++;
+		}
+		else if (derection == "S" || derection == "s") {
+			if (y > 0) y--;
+		}
+		else std::cout << "The value entered is incorrect\n";
+	}
+}
 
 /*
 Задание 4. Рамка
