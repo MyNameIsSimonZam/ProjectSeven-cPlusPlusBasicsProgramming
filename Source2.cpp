@@ -66,7 +66,43 @@ void pW1() {
 • Если ингредиентов не хватает для приготовления любого из напитков, программа должна вывести отчёт. */
 
 void pW2() {
-
+	int americanoCount = 0;
+	int latteCount = 0;
+	int water;
+	int milk;
+	std::cout << "Enter the amount of water in ml: ";
+	std::cin >> water;
+	std::cout << "Enter the amount of milk in ml: ";
+	std::cin >> milk;
+	while (water >= 30 && milk >= 270 || water >= 300) {
+		int drink;
+		std::cout << "Choose the drink (1 - americano, 2 - latte): ";
+		std::cin >> drink;
+		if (drink == 1) {
+			if (water >= 300) {
+				water -= 300;
+				std::cout << "Your drink has been prepared\n";
+				americanoCount++;
+			}
+			else std::cout << "There is't enough water: \n";
+		}
+		else if (drink == 2) {
+			if (milk >= 270) {
+				milk -= 270;
+				water -= 30;
+				std::cout << "Your drink has been prepared\n";
+				latteCount++;
+			}
+			else std::cout << "There is't enough milk: \n";
+		}
+		else std::cout << "Your chose is impossible\n";
+	}
+	std::cout << "***Report***\n";
+	std::cout << "Ingredients left\n";
+	std::cout << "Water: " << water << " ml" << "\n";
+	std::cout << "Milk: " << milk << " ml" << "\n";
+	std::cout << "Caps of Americano made: " << americanoCount << "\n";
+	std::cout << "Caps of Latte made: " << latteCount << "\n";
 }
 
 /*
