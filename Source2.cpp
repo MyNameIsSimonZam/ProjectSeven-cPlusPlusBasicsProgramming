@@ -180,7 +180,20 @@ std::cin >> width >> height;
 Рамка рисуется в соответствии с заданными размерами и с помощью условных конструкций и циклов.
 */
 
-void pW4() {}
+void pW4() {
+	int width, height;
+	std::cout << "Enter the width and height\n";
+	std::cin >> width >> height;
+	for (int i = 0; i < height; ++i) {
+		for (int j = 0; j < width; ++j) {
+			if (i == 0 || i == height - 1) std::cout << "-";
+			else if (j == 0 || j == width - 1) std::cout << "|";
+			else std::cout << " ";
+		}
+		std::cout << "\n";
+	}
+
+}
 
 /*
 Задание 5. Координатные оси
