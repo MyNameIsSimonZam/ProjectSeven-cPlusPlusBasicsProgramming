@@ -206,7 +206,23 @@ void pW4() {
 Координатные оси рисуются с помощью условных конструкций и циклов.
 */
 
-void pW5() {}
+void pW5() {
+	for (int row = 0; row < 20; ++row) {
+		for (int col = 0; col < 50; ++col) {
+			if (row == 10) {
+				if (col == 49) std::cout << ">";
+				else if (col == 25) std::cout << "+";
+				else std::cout << "-";
+			}
+			else if (col == 25) {
+				if (row == 0) std::cout << "^";
+				else std::cout << "|";
+			}
+			else std::cout << " ";
+		}
+		std::cout << "\n";
+	}
+}
 
 /*
 Задание 6. Важные объявления

@@ -31,14 +31,14 @@ int main() {
 	std::cout << "7. Задача 2. Кадастровые проблемы (цикл for).\n";
 	std::cout << "8. Задача 3. Крепкий орешек.\n";
 	std::cout << "Or choose the number of the practical work to run:\n";
-	std::cout << "9. Задание 1. Запасы продовольствия.\n";
-	std::cout << "10. Задание 2. Кофемашина.\n";
-	std::cout << "11. Задание 3. Красный Марс.\n";
-	std::cout << "12. Задание 4. Рамка.\n";
-	std::cout << "13. Задание 5. Координатные оси.\n";
-	std::cout << "14. Задание 6. Важные объявления.\n";
-	std::cout << "15. Задание 7. Биолаборатория*.\n";
-	std::cout << "16. Задание 8. Ёлочка*.\n";
+	std::cout << "11. Задание 1. Запасы продовольствия.\n";
+	std::cout << "12. Задание 2. Кофемашина.\n";
+	std::cout << "13. Задание 3. Красный Марс.\n";
+	std::cout << "14. Задание 4. Рамка.\n";
+	std::cout << "15. Задание 5. Координатные оси.\n";
+	std::cout << "16. Задание 6. Важные объявления.\n";
+	std::cout << "17. Задание 7. Биолаборатория*.\n";
+	std::cout << "18. Задание 8. Ёлочка*.\n";
 	std::cout << "Enter your choice: ";
 	std::cin >> choice;
 
@@ -67,28 +67,28 @@ int main() {
 	case 8:
 		task23();
 		break;
-	case 9:
+	case 11:
 		pW1();
 		break;
-	case 10:
+	case 12:
 		pW2();
 		break;
-	case 11:
+	case 13:
 		pW3();
 		break;
-	case 12:
+	case 14:
 		pW4();
 		break;
-	case 13:
+	case 15:
 		pW5();
 		break;
-	case 14:
+	case 16:
 		pW6();
 		break;
-	case 15:
+	case 17:
 		pW7();
 		break;
-	case 16:
+	case 18:
 		pW8();
 		break;
 	default:
